@@ -22,7 +22,7 @@ The [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol) is a
 
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone https://github.com/anton10xr/gibber-mcp
 cd mcp-server
 
 # Install dependencies
