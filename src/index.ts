@@ -165,6 +165,19 @@ app.post("/messages/:id", async (req, res) => {
   await transport.handlePostMessage(req, res);
 });
 
+// Status endpoint for health checks and server information
+app.get("/status", (req, res) => {
+  res.json({
+    status: "running",
+    server: {
+      name: "example-server",
+      version: "1.0.0"
+    },
+    activeConnections: transports.size,
+    timestamp: new Date().toISOString()
+  });
+});
+
 const port = process.env.PORT ? parseInt(process.env.PORT) : 3006;
 app.listen(port, () => {
   console.log(`MCP Server listening on port ${port}`);
