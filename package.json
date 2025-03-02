@@ -1,0 +1,34 @@
+{
+  "name": "mcp-multiply-server",
+  "version": "1.0.0",
+  "description": "MCP server with multiplication tool",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "cp src/sjcl.js build/",
+    "start": "node build/index.js",
+    "dev": "tsc -w & node --watch build/index.js",
+    "clean": "rm -rf build/",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.8",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "cors": "^2.8.5",
+    "elliptic": "^6.6.1",
+    "express": "^5.0.1",
+    "sjcl": "^1.0.8",
+    "sjcl-es": "^2.0.0",
+    "tweetnacl": "^1.0.3",
+    "zod": "^3.24.2"
+  }
+}
