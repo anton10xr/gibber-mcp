@@ -1,4 +1,4 @@
-# MCP Server
+# Tiny Cryptography MCP Server
 
 A Model Context Protocol server built with Express.js that provides cryptographic tools including key pair generation, shared secret derivation, and message encryption/decryption.
 
