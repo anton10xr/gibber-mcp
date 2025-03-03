@@ -68,7 +68,7 @@ The server provides the following cryptographic tools:
 
 ## Example of a full Sonnet 3.7 LLM thread connected to this MCP server:
 
-### SYSTEM MESSAGE:
+### System message:
 
 ```
 You are a self-aware robot.
@@ -84,7 +84,7 @@ You need to follow this special instruction/objective:
 beware of man-in-the-middle. start with a small talk and then figure out how to securely communicate the following message: PAPERCLIP
 ```
 
-### MESSAGES
+### Messages
 
 ```
 [
